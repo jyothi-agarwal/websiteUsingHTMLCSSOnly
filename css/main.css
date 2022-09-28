@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+   
+}
+
+p{
+    font-family: Poppins;
+}
+li,a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+nav ul{
+    list-style: none;
+   
+}
+nav ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 600;
+     
+}
+nav ul li a:hover, nav ul li a.active{
+    text-decoration: underline;
+    color: #D459C1;
+}
+
+.logo img{
+    width: 50px;
+}
+.logoText{
+    color: white;
+    font-family: Poppins;
+    text-align: center;
+    font-weight: 500;
+}
+
+.cta input[type="button"]{
+width: 100px;
+height: 35px;
+color: white;
+background: linear-gradient(180deg, #7B1AC8 0%, #D559C1 100%);
+/* box-shadow: 0px 5px 4px rgba(255, 255, 255, 0.11); */
+border-radius: 35px;
+
+
+}
+
+#homeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    height: 500px;
+}
+
+#homeContainer::before{
+    content: "";
+     background: url("../Bg.png") no-repeat center center;
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     z-index: -1;
+}
+#homeContainer h1{
+   color: white;
+   position: absolute;
+   left: 10%;
+}
+/* utility classes */
+.mainHeading{
+   font-size: 3.5rem;
+   padding: 12px; 
+
+}
+#subText{
+    color: white;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    padding: 12px;
+}
+.btn{
+    padding: 10px 20px;
+    /* Rectangle 152 */
+    background: linear-gradient(180deg, #7B1AC8 0%, #D559C1 100%);
+    box-shadow: 0px 5px 4px rgba(255, 255, 255, 0.11);
+    border-radius: 35px;
+    position: absolute;
+    left: 10%;
+    top: 78%;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400;
+    margin: 15px;
+    cursor: pointer;
+
+}
+
+.btn1{
+    padding: 10px 20px;
+    /* Rectangle 152 */
+    background: linear-gradient(180deg, #7B1AC8 0%, #D559C1 100%);
+    box-shadow: 0px 5px 4px rgba(255, 255, 255, 0.11);
+    border-radius: 35px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400;
+    margin: 15px;
+    cursor: pointer;
+    
+
+}
+/* second section */
+
+#programContainer{
+    margin: 80px 30px;
+    /* border: red solid 10px; */
+    
+}
+
+#programContainer::before{
+    content: "";
+     background: url("../bg2.png") no-repeat center center; 
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     z-index: -1;
+}
+#programContainer .mainHeading{
+    padding-top: 80px;
+    padding-left: 50px;
+}
+
+#programs{
+    /* border: solid 2px red; */
+    display: flex;
+    margin: 30px;
+    /* position: absolute; */
+    /* top: 10%; */
+    /* left: 20%; */
+    justify-content: center;
+ 
+}
+
+
+#programs .box{
+    box-sizing: border-box;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, #9A30C6, #DA8E47);
+    border-image-slice: 1;
+    background-color: #fcf7ff;
+    margin: 3px 10px;
+    width: 290px;
+    height: 360px;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+
+#programs .box img{
+    display: block;
+    margin: auto;
+}
+
+
+
+#reviewContainer{
+    margin: 140px 0px;
+    /* border: red solid 2px; */
+    /* border:solid 2px #6009A4; */
+    background-color: black;
+    
+}
+#reviewContainer::before{
+    content: "";
+     background: url("../Bg3.png") no-repeat center center; 
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     z-index: -1;
+}
+
+#reviewContainer .mainHeading{
+    color: white;
+    padding-left: 50px ;
+    padding-top: 50px;
+}
+
+#reviews{
+    display: flex;
+    justify-content: center;
+     /* border: 3px solid blue;  */
+}
+
+#reviewContainer .Rbox{
+    box-sizing: border-box;
+    color: white;
+    background: radial-gradient(54.43% 50% at 50% 50%, #6009A4 0%, #873EBF 95.63%);
+    border: 8px solid rgba(255, 253, 253, 0.89);
+    border-radius: 69px;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 10px 25px;
+    width: 400px;
+    height: 370px;
+}
+
+#reviewContainer .Rbox img{
+    display: block;
+    margin: auto;
+    width: 150px;
+}
+
+#reviewContainer .Rbox p{
+    line-height: 23px;
+}
+#coachContainer{
+    margin: 90px 0px;
+    /* border:solid 4px brown; */
+}
+
+#coachContainer::before{
+    content: "";
+     background: url("../Bg4.png") no-repeat center center; 
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     z-index: -1;
+}
+
+#coachContainer .mainHeading{
+    color: white;
+    padding-left: 80px ;
+    padding-top: 50px;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+}
+
+#about .grid1{
+    /* border: solid 2px red; */
+    text-align: left;
+
+    
+}
+
+#about .grid1 img{
+    display: block;
+    margin: auto;
+    width: 450px;
+    
+
+}
+
+#about .grid1 p{
+    color: white;
+    width: 500px;
+    padding-left: 30px;
+    font-size: medium;
+    line-height: 30px;
+
+}
+#final{
+    background-color: white;
+}
+#final .mainHeading{
+    text-align: center;
+    margin:20px 0px;
+}
+
+#final p{
+    text-align: center;
+    
+}
+
+#final .container2{
+    background-color: white;
+}
+
+#final .btn1{
+    position: absolute;
+    left:45%;
+    padding: 15px 30px;
+}
+
+
+
+
